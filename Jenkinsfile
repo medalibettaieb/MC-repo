@@ -9,8 +9,6 @@ dockerfile true	}
             }
         }
        
-        }
-
 
 stage('Building image') {
       steps{
@@ -19,5 +17,9 @@ stage('Building image') {
         }
       }
     }
+        }
+
+
+
     }
 
