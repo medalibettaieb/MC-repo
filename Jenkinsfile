@@ -13,7 +13,7 @@ dockerfile true	}
 stage('Building image') {
       steps{
         script {
-          docker.build  ":$BUILD_NUMBER"
+          docker.build  myimage+":$BUILD_NUMBER"
         }
       }
     }
