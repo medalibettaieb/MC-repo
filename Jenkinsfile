@@ -1,6 +1,8 @@
 pipeline {
+
     agent {
-dockerfile true	}
+dockerfile true	
+          }
 
     stages {
         stage('Exemple') {
@@ -8,18 +10,9 @@ dockerfile true	}
                 echo 'hello'
             }
         }
-       
+       }
+}
 
-stage('Building image') {
-      steps{
-        script {
-          docker.build  myimage+":$BUILD_NUMBER"
-        }
-      }
-    }
-        }
-
-
-
-    }
+      
+   
 
